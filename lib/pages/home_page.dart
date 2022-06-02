@@ -119,7 +119,7 @@ class _HomePageState extends State<HomePage> {
 
   Widget _buildCategories() {
     return Consumer<CategoriesViewModel>(
-      builder: (context, state, child) {
+      builder: (context, state, _) {
         return Container(
           height: 44,
           margin: const EdgeInsets.only(bottom: 20),
