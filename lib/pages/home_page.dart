@@ -153,7 +153,7 @@ class _HomePageState extends State<HomePage> {
         bottom: 20.0,
       ),
       child: Text(
-        "We think you might enjoy these specially selected dishes",
+        "We think you might enjoy these specially selected products",
         style: kHeading6.copyWith(
           fontSize: 22,
           fontWeight: FontWeight.w600,
