@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
         children: [
           _buildTitle(),
           _buildCategories(),
-          _buildProduct(),
+          _buildProducts(),
         ],
       ),
     );
@@ -69,7 +69,7 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-  Widget _buildProduct() {
+  Widget _buildProducts() {
     return Consumer<ProductViewModel>(
       builder: (context, state, _) {
         if (state.state == RequestState.loading) {

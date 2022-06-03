@@ -21,16 +21,27 @@ class ProductViewModel extends BaseViewModel {
     notifyListeners();
   }
 
+  bool _isMax = false;
+  bool get isMax => _isMax;
+  set isMaxChange(bool isMax) {
+    _isMax = isMax;
+    notifyListeners();
+  }
+
   Future<void> getProduct({int limit = 10, int skip = 10}) async {
     try {
-      if (_products.isEmpty) stateChange = RequestState.loading;
-      if (_products.isNotEmpty) isLoadingChange = true;
+      if (!_isMax) {
+        if (_products.isEmpty) stateChange = RequestState.loading;
+        if (_products.isNotEmpty) isLoadingChange = true;
 
-      final data = await productService.getProduct(limit, skip);
-      productsChange = data;
-      stateChange = RequestState.loaded;
+        final data = await productService.getProduct(limit, skip);
+        if (data.length == _products.length) isMaxChange = true;
 
-      if (_products.isNotEmpty) isLoadingChange = false;
+        productsChange = data;
+        stateChange = RequestState.loaded;
+
+        if (_products.isNotEmpty) isLoadingChange = false;
+      }
     } catch (e) {
       if (kDebugMode) log("Error on getProduct() :: ${e.toString()}");
       errMsgChange = e.toString();
