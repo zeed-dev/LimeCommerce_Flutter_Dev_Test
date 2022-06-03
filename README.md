@@ -1,16 +1,2 @@
-# mini_apps
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Simulator Screen Shot - iPhone 11 Pro Max - 2022-06-03 at 11 39 31](https://user-images.githubusercontent.com/57316942/171781775-0a149907-84b9-4f61-b9b1-f124b0fde61b.png)
+![Simulator Screen Shot - iPhone 11 Pro Max - 2022-06-03 at 11 39 39](https://user-images.githubusercontent.com/57316942/171781793-9576c830-09a2-4dd4-bbb4-354c455fa6b5.png)
